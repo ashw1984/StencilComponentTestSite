@@ -1,0 +1,29 @@
+{
+  "name": "StencilComponentTestSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start" : "npm run copyjs && serve www -p 5001",
+    "copyjs" : "copyfiles -f node_modules/@ashw1984/style-guide-components/dist/style-guide-components.js www/js && copyfiles -f node_modules/@ashw1984/style-guide-components/dist/style-guide-components/*.js www/js/style-guide-components",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashw1984/StencilComponentTestSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashw1984/StencilComponentTestSite/issues"
+  },
+  "homepage": "https://github.com/ashw1984/StencilComponentTestSite#readme",
+  "dependencies": {
+    "@ashw1984/style-guide-components": "^1.0.0",
+    "copyfiles": "^2.0.0"
+  },
+  "devDependencies": {
+    "serve": "^6.5.3"
+  }
+}
